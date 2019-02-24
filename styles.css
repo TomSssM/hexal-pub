@@ -1,0 +1,39 @@
+.navbar {
+  background: #323232;
+  text-align: center;
+}
+.menu {
+  width: 1020px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+.menu__item {
+  display: inline-block;
+  padding: 0.9rem;
+  text-transform: uppercase;
+  font: bold .6rem sans-serif;
+  color: #e0e0e0;
+  transition: .2s all ease-in-out;
+}
+.menu__item--active, .menu__item:hover {
+  color: #2f907c;
+}
+.menu__item--dot {
+  position: relative;
+}
+.menu__item--dot::after {
+  content: "\2022";
+  position: absolute;
+  text-align: center;
+  right: -5px;
+  width: 10px;
+  display: inline-block;
+  color: #484c5f;
+}
+/* TODO continue from here */
+.menu__item--shape-hex {
+  width: 70px;
+  height: 10px;
+  background: blue;
+}
