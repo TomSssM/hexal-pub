@@ -12,7 +12,6 @@
 </head>
 
 <body>
-  <!-- TODO can we write header class like that -->
   <header class="header">
     <!-- TODO google how to hide h1 -->
     <h1 class="header__heading-h1" hidden>Hexal</h1>
@@ -26,9 +25,16 @@
         </li>
         <li class="menu__item hex menu__item--shape-hex">
           <a href="#" class="menu__link menu__link--shape-hex">
-            <div>
-              <div>
-                <div class="hex__contents menu__arrow-cont"></div>
+            <div class="hex__layer hex__layer--main">
+              <div class="hex__layer hex__layer--inner">
+                <div class="hex__layer hex__layer--contents menu__arrow-cont">
+                  <div class="arrow">
+                    <div class="arrow__side arrow__side--top-left"></div>
+                    <div class="arrow__side arrow__side--top-right"></div>
+                    <div class="arrow__side arrow__side--bott-left"></div>
+                    <div class="arrow__side arrow__side--bott-right"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </a>
@@ -41,7 +47,119 @@
         </li>
       </ul>
     </nav>
-    <section class="navbar__slider"></section>
+    <section class="slider">
+      <!-- TODO make the slider work with JS -->
+      <div class="slider__row slider__row--style-default">
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--one">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--two">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--three">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--four">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__row slider__row--style-offset">
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--five">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--six">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--seven">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--eight">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hex slider__hex">
+          <div class="hex__layer hex__layer--main">
+            <div class="hex__layer hex__layer--inner">
+              <div class="hex__layer hex__layer--contents slider__image slider__image--nine">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__row slider__row--style-default">
+          <div class="hex slider__hex">
+            <div class="hex__layer hex__layer--main">
+              <div class="hex__layer hex__layer--inner">
+                <div class="hex__layer hex__layer--contents slider__image slider__image--ten">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hex slider__hex">
+            <div class="hex__layer hex__layer--main">
+              <div class="hex__layer hex__layer--inner">
+                <div class="hex__layer hex__layer--contents slider__image slider__image--eleven">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hex slider__hex">
+            <div class="hex__layer hex__layer--main">
+              <div class="hex__layer hex__layer--inner">
+                <div class="hex__layer hex__layer--contents slider__image slider__image--twelve">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hex slider__hex">
+            <div class="hex__layer hex__layer--main">
+              <div class="hex__layer hex__layer--inner">
+                <div class="hex__layer hex__layer--contents slider__image slider__image--thirteen">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
   </header>
 
   <main class="main">
@@ -70,6 +188,10 @@
   </footer>
 
   <script src="./index.js"></script>
+
+  <!-- TODO ask about weird values 88px is it ok? -->
+  <!-- TODO ask or correct my arrow -->
+
 </body>
 
 </html>
