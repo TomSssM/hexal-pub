@@ -18,11 +18,27 @@
     <h1 class="header__heading-h1" hidden>Hexal</h1>
     <nav class="navbar">
       <ul class="menu">
-        <a class="menu__item menu__item--active menu__item--dot" href="#">Portfolio</a>
-        <a class="menu__item" href="#">About</a>
-        <div class="hex menu__item menu__item--shape-hex"></div>
-        <a class="menu__item menu__item--dot" href="#">Blog</a>
-        <a class="menu__item" href="#">Get in Touch</a>
+        <li class="menu__item">
+          <a class="menu__link menu__link--dot menu__link--active" href="#">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">About</a>
+        </li>
+        <li class="menu__item hex menu__item--shape-hex">
+          <a href="#" class="menu__link menu__link--shape-hex">
+            <div>
+              <div>
+                <div class="hex__contents menu__arrow-cont"></div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--dot" href="#">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Get in Touch</a>
+        </li>
       </ul>
     </nav>
     <section class="navbar__slider"></section>

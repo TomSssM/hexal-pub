@@ -10,19 +10,22 @@
 }
 .menu__item {
   display: inline-block;
+}
+.menu__link {
+  display: block;
   padding: 0.9rem;
   text-transform: uppercase;
   font: bold .6rem sans-serif;
   color: #e0e0e0;
-  transition: .2s all ease-in-out;
+  transition: .1s all ease-in-out;
 }
-.menu__item--active, .menu__item:hover {
+.menu__link--active, .menu__link:hover {
   color: #2f907c;
 }
-.menu__item--dot {
+.menu__link--dot {
   position: relative;
 }
-.menu__item--dot::after {
+.menu__link--dot::after {
   content: "\2022";
   position: absolute;
   text-align: center;
@@ -30,10 +33,40 @@
   width: 10px;
   display: inline-block;
   color: #484c5f;
+  top: 50%;
+  margin-top: -10px;
+  line-height: 20px;
+  vertical-align: middle;
 }
-/* TODO continue from here */
+.hex {
+  width: 90px;
+  height: 103px;
+  overflow: hidden;;
+}
+.hex * {
+  overflow: hidden;
+  width: 90px;
+  height: 103px;
+  transform: rotate(60deg);
+  visibility: hidden;
+}
+.hex__contents {
+  visibility: visible;
+}
 .menu__item--shape-hex {
-  width: 70px;
-  height: 10px;
-  background: blue;
+  display: inline-block;
+  padding: 0;
+  margin: -12px 0 -41px 0;
+}
+.menu__link--shape-hex {
+  padding: 0;
+}
+.menu__arrow-cont {
+  display: block;
+  background: #323232;
+  transition: .1s all ease-in-out;
+}
+/* TODO continue fom here */
+.menu__arrow-cont:hover {
+  background: #fff;
 }
