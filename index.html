@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="./reset.css">
   <!-- TODO <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Hexal</title>
 </head>
 
 <body>
   <header class="header">
-    <!-- TODO google how to hide h1 -->
     <h1 class="header__heading-h1" hidden>Hexal</h1>
     <nav class="navbar">
       <ul class="menu">
@@ -25,7 +25,7 @@
           <a class="menu__link" href="#">About</a>
         </li>
         <li class="menu__item hex menu__item--shape-hex">
-          <a href="#" class="menu__link menu__link--shape-hex">
+          <a href="#" class="menu__link menu__link--shape-hex js-arrow-down">
             <div class="hex__layer hex__layer--main">
               <div class="hex__layer hex__layer--inner">
                 <div class="hex__layer hex__layer--contents menu__arrow-cont">
@@ -49,7 +49,7 @@
       </ul>
     </nav>
     <section class="portfolio">
-      <!-- TODO make the portfolio work with JS -->
+      
       <div class="portfolio__nav">
         <div class="portfolio__button"></div>
         <div class="portfolio__button"></div>
@@ -176,7 +176,7 @@
 
   <main class="main">
     <section class="main__section bio">
-      <div class="bio__container">
+      <div class="bio__container js-container">
         <div class="bio__hex hex">
           <div class="hex__layer hex__layer--main">
             <div class="hex__layer hex__layer--inner">
@@ -186,49 +186,84 @@
           </div>
         </div>
         <article class="bio__article">
-          <h2 class="bio__header-2 main__header-2">Smith Anderson</h2>
-          <span class="main__span bio__title">Illustrator & Character Designer</span>
+          <header class="bio__header">
+            <h2 class="bio__header-2 main__header-2">Smith Anderson</h2>
+            <span class="main__span bio__title">Illustrator & Character Designer</span>
+          </header>
           <p class="bio__description main__paragraph">Bacon ipsum dolor amet doner sirloin
             hamburger, pork loin jowl beef prosciutto leberkas meatball
             ham ball tip kielbasa porchetta meatloaf. Cupim strip steak alcatra t-bone chuck shank tongue pig
             filet mignon corned beef pork pork chop chicken. Shank tail rump meatball fatback swine pastrami.
             Rump tenderloin jerky, swine tongue cow picanha prosciutto ground round shoulder.</p>
-          </article>
-          <div class="bio-social">
+          <aside class="bio-social">
             <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf09a;</i></a>
             <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf099;</i></a>
             <a href="#" class="bio-social__link bio-social__link--blur" class="fa"><i class="fa bio-social__icon">&#xf0d5;</i></a>
             <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf231;</i></a>
             <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf0e1;</i></a>
             <a href="#" class="bio-social__link bio-social__link--blur" class="fa"><i class="fa bio-social__icon">&#xf17d;</i></a>
-          </div>
+          </aside>
+        </article>
       </div>
     </section>
     <section class="main__section feedback">
       <div class="feedback__container">
         <section class="feedback__section">
-          <h2 class="main__header-2 feedback__header-2">Get In Touch</h2>
-          <span class="main__span feedback__title">In order to get in touch use the contact form below:</span>
-          <form class="feedback__form" action=""></form>
-          <article class="feedback__article">
-            <!-- TODO delegate font color -->
-            <p class="main__paragraph feedback__paragraph"></p>
-            <section class="feedback__contacts"></section>
-          </article>
+          <header class="feedback__header">
+            <h2 class="main__header-2 feedback__text">Get In Touch</h2>
+            <span class="main__span feedback__title feedback__text">In order to get in touch use the contact form below:</span>
+          </header>
+          <div class="feedback__main">
+            <form class="feedback__form" action="" method="GET">
+              <input name="name" placeholder="Name(Required)" type="text" class="feedback__form-element" required>
+              <input name="email" placeholder="Email(Required)" type="email" class="feedback__form-element" required>
+              <input name="subject" placeholder="Subject" type="text" class="feedback__form-element">
+              <textarea name="content" placeholder="Write your message here..." type="text" class="feedback__form-element feedback__form-element--type-textarea"
+                cols="30" rows="8"></textarea>
+              <input type="submit" class="feedback__form-element feedback__form-element--type-submit" value="SEND">
+            </form>
+            <article class="feedback__article">
+              <p class="main__paragraph feedback__paragraph feedback__text"><b class="main__paragraph--weight-bold">Cupcake ipsum</b> dolor. Sit amet carrot cake candy liquorice
+                chocolate bar carrot cake I love. Sweet gingerbread powder. Jelly lemon drops gummi bears I love cotton
+                candy bear claw biscuit.</p>
+              <div class="feedback__contacts">
+                <div class="row">
+                  <i class="material-icons feedback__icon feedback__text">location_on</i>
+                  <a href='#' class="feedback__address main__paragraph feedback__text main__paragraph--weight-bold">Elm. St. 14/05 Lost City</a>
+                </div>
+                <div class="row">
+                  <i class="material-icons feedback__icon feedback__text">call</i>
+                  <a href='tel:+1(12)1234567' class="feedback__address main__paragraph feedback__text main__paragraph--weight-bold">+1(12)1234567</a>
+                </div>
+                <div class="row">
+                  <i class="material-icons feedback__icon feedback__text">mail</i>
+                  <a href='mailto:info@hexalcorp.com' class="feedback__address main__paragraph feedback__text main__paragraph--weight-bold">info@hexalcorp.com</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </section>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span class="footer__copy"></span>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <a href="#" class="main-footer__copy main__paragraph">Copyright 2013 by PSDchat</a>
+    </div>
   </footer>
 
   <script src="./index.js"></script>
-
+  <!-- TODO responsive -->
   <!-- TODO ask about weird values 88px is it ok? -->
   <!-- TODO ask or correct my arrow -->
   <!-- TODO ask about the length of portfolio (and HTML) -->
+  <!-- TODO overhaul the use of <section>, <article> and <div> -->
+  <!-- TODO Validator -->
+  <!-- TODO google how to hide h1 -->
+  <!-- TODO Favicon -->
+  <!-- TODO autoprefix -->
+  <!-- TODO make the portfolio work with JS -->
 
 </body>
 
