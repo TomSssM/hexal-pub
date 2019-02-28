@@ -5,9 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./reset.css">
-  <!-- TODO <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta name="description" content="The Website of some male Designer">
+
+  <link rel="stylesheet" href="./assets/src/CSS/styles.css">
+  <link rel="stylesheet" href="./assets/src/CSS/reset.css">
+
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="./assets/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Hexal</title>
@@ -65,7 +74,7 @@
       </ul>
     </nav>
     <section class="portfolio">
-      
+
       <div class="portfolio__nav">
         <div class="portfolio__button"></div>
         <div class="portfolio__button"></div>
@@ -191,8 +200,8 @@
   </header>
 
   <main class="main">
-    <section class="main__section bio">
-      <div class="bio__container js-container">
+    <section class="main__section bio js-container">
+      <div class="bio__container">
         <div class="bio__hex hex">
           <div class="hex__layer hex__layer--main">
             <div class="hex__layer hex__layer--inner">
@@ -219,41 +228,44 @@
             ham ball tip kielbasa porchetta meatloaf. Cupim strip steak alcatra t-bone chuck shank tongue pig
             filet mignon corned beef pork pork chop chicken. Shank tail rump meatball fatback swine pastrami.
             Rump tenderloin jerky, swine tongue cow picanha prosciutto ground round shoulder.</p>
-          <aside class="bio-social">
-            <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf09a;</i></a>
-            <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf099;</i></a>
-            <a href="#" class="bio-social__link bio-social__link--blur" class="fa"><i class="fa bio-social__icon">&#xf0d5;</i></a>
-            <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf231;</i></a>
-            <a href="#" class="bio-social__link" class="fa"><i class="fa bio-social__icon">&#xf0e1;</i></a>
-            <a href="#" class="bio-social__link bio-social__link--blur" class="fa"><i class="fa bio-social__icon">&#xf17d;</i></a>
-          </aside>
+          <div class="bio-social">
+            <a href="#" class="bio-social__link"><i class="fa bio-social__icon">&#xf09a;</i></a>
+            <a href="#" class="bio-social__link"><i class="fa bio-social__icon">&#xf099;</i></a>
+            <a href="#" class="bio-social__link bio-social__link--blur"><i class="fa bio-social__icon">&#xf0d5;</i></a>
+            <a href="#" class="bio-social__link"><i class="fa bio-social__icon">&#xf231;</i></a>
+            <a href="#" class="bio-social__link"><i class="fa bio-social__icon">&#xf0e1;</i></a>
+            <a href="#" class="bio-social__link bio-social__link--blur"><i class="fa bio-social__icon">&#xf17d;</i></a>
+          </div>
         </article>
       </div>
     </section>
     <section class="main__section feedback">
-      <div class="feedback__container">
-        <section class="feedback__section">
+      <div class="feedback__container-lines">
+        <div class="feedback__container">
           <header class="feedback__header">
             <h2 class="main__header-2 feedback__text">Get In Touch</h2>
-            <span class="main__span feedback__title feedback__text">In order to get in touch use the contact form below:</span>
+            <span class="main__span feedback__title feedback__text">In order to get in touch use the contact form
+              below:</span>
           </header>
           <div class="feedback__main">
             <form class="feedback__form" action="" method="GET">
               <input name="name" placeholder="Name (Required)" type="text" class="feedback__form-element" required>
               <input name="email" placeholder="Email (Required)" type="email" class="feedback__form-element" required>
               <input name="subject" placeholder="Subject" type="text" class="feedback__form-element">
-              <textarea name="content" placeholder="Write your message here..." type="text" class="feedback__form-element feedback__form-element--type-textarea"
+              <textarea name="content" placeholder="Write your message here..." class="feedback__form-element feedback__form-element--type-textarea"
                 cols="30" rows="8"></textarea>
               <input type="submit" class="feedback__form-element feedback__form-element--type-submit" value="SEND">
             </form>
             <article class="feedback__article">
-              <p class="main__paragraph feedback__paragraph feedback__text"><b class="main__paragraph--weight-bold">Cupcake ipsum</b> dolor. Sit amet carrot cake candy liquorice
+              <p class="main__paragraph feedback__paragraph feedback__text"><b class="main__paragraph--weight-bold">Cupcake
+                  ipsum</b> dolor. Sit amet carrot cake candy liquorice
                 chocolate bar carrot cake I love. Sweet gingerbread powder. Jelly lemon drops gummi bears I love cotton
                 candy bear claw biscuit.</p>
               <div class="feedback__contacts">
                 <div class="row">
                   <i class="material-icons feedback__icon feedback__text">location_on</i>
-                  <a href='#' class="feedback__address main__paragraph feedback__text main__paragraph--weight-bold">Elm. St. 14/05 Lost City</a>
+                  <a href='#' class="feedback__address main__paragraph feedback__text main__paragraph--weight-bold">Elm.
+                    St. 14/05 Lost City</a>
                 </div>
                 <div class="row">
                   <i class="material-icons feedback__icon feedback__text">call</i>
@@ -266,7 +278,7 @@
               </div>
             </article>
           </div>
-        </section>
+        </div>
       </div>
     </section>
   </main>
@@ -278,11 +290,6 @@
   </footer>
 
   <script src="./index.js"></script>
-  <!-- TODO overhaul the use of <section>, <article> and <div> -->
-  <!-- TODO Validator -->
-  <!-- TODO Favicon -->
-  <!-- TODO autoprefix -->
-  <!-- TODO make the portfolio work with JS -->
 
 </body>
 
